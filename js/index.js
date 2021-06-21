@@ -43,7 +43,7 @@ function gameEngine(){
         gameOverSound.play();
         musicSound.pause();
         inputDir = {x:0, y:0};
-        alert("Game Over. Press any key to play again!");
+        alert("Game Over. Press okay to play again!");
         snakeArr = [{x: 13, y: 15}];
 
         musicSound.play();
@@ -100,7 +100,7 @@ function gameEngine(){
 
 
 // main logics starts here
-// musicSound.play();
+musicSound.play();
 let highScore = localStorage.getItem('highScore');
 if(highScore === null){
     highScoreVal = 0;
